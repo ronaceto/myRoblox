@@ -1,0 +1,95 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #1f2340;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.overlay.center {
+  display: grid;
+  place-items: center;
+  background: rgba(18, 20, 39, 0.45);
+  pointer-events: auto;
+}
+
+.panel {
+  max-width: 540px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 14px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.2);
+}
+
+.panel h1,
+.panel h2 {
+  margin-top: 0;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #4a4f71;
+}
+
+.hud {
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.hud-row {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hud .locked {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.hud .active {
+  color: #047857;
+  font-weight: 700;
+}
+
+.hud button {
+  pointer-events: auto;
+}
